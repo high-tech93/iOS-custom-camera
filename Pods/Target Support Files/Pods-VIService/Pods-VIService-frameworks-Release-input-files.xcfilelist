@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-VIService/Pods-VIService-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework
+${BUILT_PRODUCTS_DIR}/SwiftyCam/SwiftyCam.framework
+${BUILT_PRODUCTS_DIR}/TPKeyboardAvoidingSwift/TPKeyboardAvoidingSwift.framework
+${BUILT_PRODUCTS_DIR}/iOS-Camera-Button/iOS_Camera_Button.framework

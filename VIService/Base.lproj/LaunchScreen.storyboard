@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MrA-ta-alD">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIService.eu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNS-yq-9rn">
+                                        <rect key="frame" x="189" y="171.5" width="430" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="dEv-f5-t6w"/>
+                                            <constraint firstAttribute="width" constant="430" id="svD-o1-eT3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="KNS-yq-9rn" firstAttribute="centerY" secondItem="MrA-ta-alD" secondAttribute="centerY" id="d4u-4f-aMc"/>
+                                    <constraint firstItem="KNS-yq-9rn" firstAttribute="centerX" secondItem="MrA-ta-alD" secondAttribute="centerX" id="hjE-wo-JSV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MrA-ta-alD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0q1-TG-J9t"/>
+                            <constraint firstItem="MrA-ta-alD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5RR-pg-i0U"/>
+                            <constraint firstItem="MrA-ta-alD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BqG-v0-LeC"/>
+                            <constraint firstItem="MrA-ta-alD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LDh-gr-BX7"/>
+                            <constraint firstItem="MrA-ta-alD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="mW6-Lm-Qay"/>
+                            <constraint firstItem="MrA-ta-alD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zE5-KU-foH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.901785714285715" y="373.91304347826087"/>
+        </scene>
+    </scenes>
+</document>

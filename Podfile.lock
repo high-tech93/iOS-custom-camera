@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.9.1)
+  - iOS-Camera-Button (0.0.1)
+  - MBProgressHUD (1.1.0)
+  - SkyFloatingLabelTextField (3.8.0)
+  - SwiftyCam (4.0.0)
+  - TPKeyboardAvoidingSwift (3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6)
+  - iOS-Camera-Button
+  - MBProgressHUD (~> 1.1.0)
+  - SkyFloatingLabelTextField
+  - SwiftyCam
+  - TPKeyboardAvoidingSwift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - iOS-Camera-Button
+    - MBProgressHUD
+    - SkyFloatingLabelTextField
+    - SwiftyCam
+    - TPKeyboardAvoidingSwift
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  iOS-Camera-Button: 609cf174a575cfbc3019156afce04be3464c9110
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
+  SwiftyCam: 6e57914771d972fbe508e759dc9d0150a44a93fd
+  TPKeyboardAvoidingSwift: ce1a75e0bc3af6b485f8bfa1d0a8320cfc565851
+
+PODFILE CHECKSUM: 7fcb58d900ea03acf3fc30f8de32859b7129bdca
+
+COCOAPODS: 1.8.4

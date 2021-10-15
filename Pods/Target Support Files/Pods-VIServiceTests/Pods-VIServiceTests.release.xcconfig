@@ -1,0 +1,9 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/SkyFloatingLabelTextField" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyCam" "${PODS_CONFIGURATION_BUILD_DIR}/TPKeyboardAvoidingSwift" "${PODS_CONFIGURATION_BUILD_DIR}/iOS-Camera-Button"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftyCam/SwiftyCam.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TPKeyboardAvoidingSwift/TPKeyboardAvoidingSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/iOS-Camera-Button/iOS_Camera_Button.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "CoreGraphics" -framework "MBProgressHUD" -framework "QuartzCore" -framework "SkyFloatingLabelTextField" -framework "SwiftyCam" -framework "TPKeyboardAvoidingSwift" -framework "iOS_Camera_Button"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES
