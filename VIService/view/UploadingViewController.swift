@@ -49,8 +49,6 @@ class UploadingViewController: UIViewController {
         compressVideo(videoUrl) { (compressedURL) in
             self.uploadVideoURL = compressedURL
             UISaveVideoAtPathToSavedPhotosAlbum(compressedURL.path, nil, nil, nil)
-           // remove activity indicator
-           // do something with the compressedURL such as sending to Firebase or playing it in a player on the *main queue*
         }
     
     }
@@ -68,8 +66,7 @@ class UploadingViewController: UIViewController {
             try? FileManager.default.removeItem(at: url)
         }
     }
-    
-    // compression function, it returns a .mp4 but you can change it to .mov inside the do try block towards the middle. Change assetWriter = try AVAssetWriter ... AVFileType.mp4 to AVFileType.mov
+
     func compressVideo(_ urlToCompress: URL, completion:@escaping (URL)->Void) {
         
         var audioFinished = false
@@ -318,11 +315,14 @@ class UploadingViewController: UIViewController {
             switch result {
             case .success(let response):
                 if response.status != "ok"{
+                    self.uploadButton.isEnabled = true
+                    self.deleteButton.isEnabled = true
                     self.uploadButton.setTitle("Resend video", for: .normal)
                     self.showAlert(title: "Error", message: "Upload Failed, Try again later.")
                 } else {
                     self.showAlert(title: "", message: "Video upload done") {
                         self.deleteFile(url: self.videoUrl)
+                        self.deleteFile(url: self.uploadVideoURL)
                         MBProgressHUD.showAdded(to: self.view, animated: true)
                         ApiManager.shared.videoSuccess(deviceId: self.deviceId, carNumber: self.carNumber) { (result) in
                             MBProgressHUD.hide(for: self.view, animated: true)
@@ -343,6 +343,8 @@ class UploadingViewController: UIViewController {
                     }
                 }
             case .failure(let error):
+                self.uploadButton.isEnabled = true
+                self.deleteButton.isEnabled = true
                 self.uploadButton.setTitle("Resend video", for: .normal)
                 if error._code == NSURLErrorTimedOut {
                     self.showAlert(title: "Error", message: error.localizedDescription)
